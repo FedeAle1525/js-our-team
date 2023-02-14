@@ -74,10 +74,19 @@ for (let i = 0; i < team.length; i++){
   const role = member.role;
   const picture = member.picture;
 
+  // Creo elemento del DOM per l'immagine
+  const pictureEl = document.createElement('img');
+  pictureEl.src = picture;
+  pictureEl.style.cssText = 'width:100px'
+
   tableEl.innerHTML += 
-  `<td>${picture}</td>
-  <td>${firstName} ${lastName}</td>
-  <td>${role}</td>`;
+  `<tr>
+    <td id="picture${i}"></td>
+    <td>${firstName} ${lastName}</td>
+    <td>${role}</td>
+  </tr>`;
+
+  document.getElementById(`picture${i}`).append(pictureEl);
   
 };
 
