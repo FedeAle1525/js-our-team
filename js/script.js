@@ -59,3 +59,25 @@ for (let i = 0; i < team.length; i++){
   };
 };
 
+// MILESTONE 2: Stampare le stesse informazioni su DOM sotto forma di stringhe
+
+// Recupero elemento Tabella dal DOM
+const tableEl = document.getElementById('table');
+
+for (let i = 0; i < team.length; i++){
+  // Pesco ogni Membro come elemento dell'Array Team
+  const member = team[i];
+
+  // Leggo i valori delle varie Proprieta' del Membro
+  const firstName = member.firstName;
+  const lastName = member.lastName;
+  const role = member.role;
+  const picture = member.picture;
+
+  tableEl.innerHTML += 
+  `<td>${picture}</td>
+  <td>${firstName} ${lastName}</td>
+  <td>${role}</td>`;
+  
+};
+
