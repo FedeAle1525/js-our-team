@@ -45,3 +45,17 @@ const team = [
 
 ];
 
+// console.log(team);
+
+// MILESTONE 1: Stampare su console le informazioni per ogni Membro del Team (utilizzando il Ciclo 'For - In')
+for (let i = 0; i < team.length; i++){
+  // Pesco ogni Membro come elemento dell'Array Team
+  const member = team[i];
+  // console.log(member);
+
+  // Accedo a tutte le pProprieta' di ogni elemento del Team
+  for (let key in member){
+    console.log(member[key]);
+  };
+};
+
