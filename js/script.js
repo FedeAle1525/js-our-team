@@ -53,9 +53,9 @@ for (let i = 0; i < team.length; i++){
   const member = team[i];
   // console.log(member);
 
-  // Accedo a tutte le pProprieta' di ogni elemento del Team
+  // Accedo a tutte le Proprieta' di ogni elemento del Team e le stampo a console
   for (let key in member){
-    console.log(member[key]);
+    console.log(key, ':', member[key]);
   };
 };
 

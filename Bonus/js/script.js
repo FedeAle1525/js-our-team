@@ -86,6 +86,7 @@ for (let i = 0; i < team.length; i++){
     <td>${role}</td>
   </tr>`;
 
+  // Un'alternativa all''append' poteva essere usare uno Switch Case sulla Key e differenziare le stampe in base al tipo
   document.getElementById(`picture${i}`).append(pictureEl);
   
 };
